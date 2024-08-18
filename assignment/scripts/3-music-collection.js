@@ -5,7 +5,11 @@ function addToCollection(collection, title, artist, yearPublished) {
   // your code here...
 }
 
-
+let album = {
+  title:'The Dark Side of the Moon',
+  artist: 'Pink Floyd',
+  yearPublished: 1973
+}
 
 
 
