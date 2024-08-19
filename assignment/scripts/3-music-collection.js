@@ -2,18 +2,30 @@ console.log('***** Music Collection *****')
 // Safe Zone -- Write code below this line
 let myCollection = [];
 function addToCollection(collection, title, artist, yearPublished) {
-  // your code here...
+  let favAlbums ={
+    title: title,
+    artist: artist,
+    yearPublished: yearPublished
+  }
+collection.push(favAlbums);
+return favAlbums;
 }
 
-let album = {
-  title:'The Dark Side of the Moon',
-  artist: 'Pink Floyd',
-  yearPublished: 1973
+console.log(addToCollection(myCollection, 'The Dark Side of the Moon', 'Pink Floyd', '1973'))
+console.log(addToCollection(myCollection, 'Blood on the Tracks', 'Bob Dylan', '1975'))
+console.log(addToCollection(myCollection, 'A Night at the Opera', 'Queen', '1975'))
+console.log(addToCollection(myCollection,'unheard', 'Hozier', '2024'))
+console.log(addToCollection(myCollection, 'Notorious','The Notorious B.I.G.', '2009'))
+console.log(addToCollection(myCollection, ' B-sides and rarities', 'Pearl Jam', '2003'))
+
+// end first part
+
+function showCollection(collection){
+ for(let i = 0; i < collection.length; i++) {
+console.log(collection[i]);
+ }
 }
-
-
-
-
+showCollection(myCollection)
 
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
 // as a lil' chunk of friendly code that you don't need to understand right now.
