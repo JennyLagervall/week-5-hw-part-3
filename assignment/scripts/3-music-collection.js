@@ -31,6 +31,21 @@ showCollection(myCollection);
 
 // end part two
 
+function findByArtist(collection, artist){
+  let matchingResults = [];
+  for(let i = 0; i < collection.length; i++) {
+    let album = collection[i];
+    if(album.artist === artist){
+      matchingResults.push(album);
+   
+}
+  }
+  return matchingResults;
+}
+console.log('should show bob dylan album', findByArtist(myCollection, 'Bob Dylan'));
+console.log('should return empty', findByArtist(myCollection, 'The Doors'));
+
+
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
 // as a lil' chunk of friendly code that you don't need to understand right now.
 // (It's used for automated testing.)
